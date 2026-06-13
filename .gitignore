@@ -1,21 +1,11 @@
-# Ignore python virtual environments or cache
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore python cache files
 __pycache__/
 *.pyc
 
-# Ignore data storage directories (keep the folders, ignore files inside)
-data/raw/*
-data/processed/*
-
-# Exception: allow Git to track the structure via tracking READMEs if you want, 
-# but keeping it simple, let's ignore all datasets
-*.gpx
-*.csv
-*.xlsx
-
-# Ignore serialized machine learning models
-models/*
-*.pkl
-*.joblib
-
-# Ignore OS files
-.DS_Store
+# Ignore raw data
+data/raw/
